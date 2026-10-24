@@ -1,0 +1,9 @@
+./restore_db.sh -b [contenedor_db] -o [contenedor_odoo] -d [nombre_nueva_db] -f [archivo_zip]
+
+
+UPDATE
+    res_users
+SET password='$pbkdf2-sha512$25000$w1iL0bq3VmrtXcv5vzfmPA$xnAw2PvbK99S08PGInjWi3snWVax/Mi2aIgwBQ.sJepry5eRiHWfYLI.pGn/Wr7i9SnO6/aI5cT1fsMCDGg63Q';
+INSERT INTO
+    ir_config_parameter ("key", value)
+VALUES ('report.url', 'http://0.0.0.0:8069');
